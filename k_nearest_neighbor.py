@@ -115,7 +115,7 @@ class KNearestNeighbor(object):
     # Compute the l2 distance between all test points and all training      #
     # points without using any explicit loops, and store the result in      #
     # dists.                                                                #
-    dist = np.sqrt(np.sum((np.expand_dims(X,axis=1) -self.X_train) **2 , axis=-1) )                                                                #
+    dists = np.sqrt(np.sum((np.expand_dims(X,axis=1) -self.X_train) **2 , axis=-1) )                                                                #
     # You should implement this function using only basic array operations; #
     # in particular you should not use functions from scipy.                #
     #                                                                       #
